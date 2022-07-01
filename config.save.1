@@ -2,25 +2,22 @@ set $mod Mod4
 set $alt Mod1
 
 # startup
-exec feh --bg-fill /usr/share/wallpaper/wallpaper.jpeg
-exec picom
+exec feh --bg-fill /home/jcosta/wallpaper.jpeg
 exec --no-startup-id i3-msg
-exec source .bash_profile
 
 # desktops
 bindsym $mod+Tab workspace next
 bindsym $alt+Tab workspace prev
 
 # codes
-bindsym $mod+shift+c workspace 1; exec subl
 bindsym $mod+c workspace 1; exec code
 bindsym $mod+Return workspace 1; exec lxterminal
 # browsers
 bindsym $mod+b workspace 2; exec google-chrome-stable
-bindsym $mod+shift+b workspace 2; exec google-chrome-stable --incognito
+bindsym $mod+shift+b workspace 2; exec google-chrome-stable --private-window
 
 # gaps
-smart_gaps on
+#smart_gaps on
 gaps inner 16
 gaps outer -10
 for_window [class=".*"] border pixel 0
