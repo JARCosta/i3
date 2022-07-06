@@ -8,8 +8,8 @@ exec --no-startup-id i3-msg
 exec source .bash_profile
 
 # desktops
-bindsym $mod+Tab workspace next
-bindsym $alt+Tab workspace prev
+bindsym $mod+Tab workspace prev 
+bindsym $alt+Tab workspace next
 
 # codes
 bindsym $mod+shift+c workspace 1; exec subl
